@@ -139,6 +139,7 @@
             </div>
 
             <!-- Vid Drawer -->
+            <div id="drawer-overlay-Vid" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
             <div id="drawer-Vid" class="fixed top-0 right-0 h-full w-3/4 bg-white shadow-xl transform translate-x-full transition-transform duration-300 z-50">
                 <div class="p-4">
                     <div class="flex justify-between items-center mb-4">
@@ -154,7 +155,7 @@
             </div>
             
             <!-- Test Drawer -->
-            <div id="drawer-overlay-Test" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+            <div id="drawer-overlay-test" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
             <div id="drawer-test" class="fixed top-0 right-0 h-full w-3/4 bg-white shadow-xl transform translate-x-full transition-transform duration-300 z-50">
                 <div class="p-4">
                     <div class="flex justify-between items-center mb-4">
@@ -228,7 +229,7 @@
         const openBtnTest = document.getElementById('open-drawer-btn-test');
         const closeBtnTest = document.getElementById('close-drawer-btn-test');
         const drawerTest = document.getElementById('drawer-test');
-        const overlayTest = document.getElementById('drawer-overlay-Test'); // แก้ไขตาม ID ใน HTML
+        const overlayTest = document.getElementById('drawer-overlay-test'); // แก้ไขตาม ID ใน HTML
 
         // ฟังก์ชันเปิด Drawer
         function openDrawerTest() {
@@ -248,6 +249,7 @@
         closeBtnTest.addEventListener('click', closeDrawerTest);
         overlayTest.addEventListener('click', closeDrawerTest);
     });
+
 </script>
 
 </body>
